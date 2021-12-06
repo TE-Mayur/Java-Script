@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form name="first" class="card" onsubmit="return validate(event)">
+        <div class="mb-3 card-body">
+            <label for="exampleInputEmail1" class="form-label">User Name</label>
+            <input type="text" class="exampleInput" id="user" aria-describedby="emailHelp" name="user">
+            <small class="userError" style="color: red;" id="nameErr"></small>
+           </div>
+            <div class="mb-3 card-body">
+                <label for="exampleInputPassword1" class="pwd">Password</label>
+                <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:150px;">Submit</button>
+    </form>
+
+    <script src="./jquery.slim.min.js"></script>
+    <script src="./form.js"></script>
+    <script src="./json.js"></script>
+    <script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
